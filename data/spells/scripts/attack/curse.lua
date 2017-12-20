@@ -23,7 +23,7 @@ for i = 1, #damageTable do
 	end
 end
 
-combat:setCondition(condition)
+combat:addCondition(condition)
 
 function onCastSpell(creature, var)
 	return combat:execute(creature, var)

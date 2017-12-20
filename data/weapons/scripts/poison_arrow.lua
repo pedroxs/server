@@ -7,7 +7,7 @@ combat:setFormula(COMBAT_FORMULA_SKILL, 1, 0, 1, 0)
 local condition = Condition(CONDITION_POISON)
 condition:setParameter(CONDITION_PARAM_DELAYED, 1)
 condition:addDamage(10, 2000, -1)
-combat:setCondition(condition)
+combat:addCondition(condition)
 
 function onUseWeapon(cid, var)
 	return combat:execute(cid, var)

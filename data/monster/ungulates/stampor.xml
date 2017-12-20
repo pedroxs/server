@@ -24,7 +24,7 @@
 		<attack name="lifedrain" interval="2000" chance="15" target="1" min="-75" max="-100">
 			<attribute key="shootEffect" value="smallstone" />
 		</attack>
-		<attack name="stampor skill reducer" range="5" interval="2000" chance="10" />
+		<attack script="monster/stampor skill reducer.lua" range="5" interval="2000" chance="10" />
 	</attacks>
 	<defenses>
 		<defense name="healing" interval="2000" chance="15" min="90" max="120">

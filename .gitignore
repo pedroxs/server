@@ -222,5 +222,9 @@ lua51.dll
 sqlite.dll
 theforgottenserver.exe
 zlib1.dll
-realmap.otbm
+*.otbm
 map.rar
+
+# Intellij
+.idea/
+*.iml

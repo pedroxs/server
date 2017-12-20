@@ -11,7 +11,7 @@ local condition = Condition(CONDITION_POISON)
 condition:setParameter(CONDITION_PARAM_DELAYED, 1)
 condition:addDamage(4, 2000, -2)
 condition:addDamage(6, 2000, -1)
-xCombat:setCondition(condition)
+xCombat:addCondition(condition)
 
 function onUseWeapon(cid, var)
 	local ret = combat:execute(cid, var)

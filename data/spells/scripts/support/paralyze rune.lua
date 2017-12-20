@@ -4,7 +4,7 @@ combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_MAGIC_RED)
 local condition = Condition(CONDITION_PARALYZE)
 condition:setParameter(CONDITION_PARAM_TICKS, 20000)
 condition:setFormula(-0.9, 0, -0.9, 0)
-combat:setCondition(condition)
+combat:addCondition(condition)
 
 function onCastSpell(creature, var, isHotkey)
 	if not combat:execute(creature, var) then
